@@ -1,61 +1,8 @@
 <!doctype html>
-<html lang="th">
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="theme-color" content="#080d20">
-<title>KOMI AI 1</title>
-<link rel="manifest" href="manifest.webmanifest">
+<html lang="th"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#080d20"><title>KOMI AI 1 • Device Concept</title>
 <style>
-:root{color-scheme:dark;--bg:#070b18;--panel:#101a32;--line:#26385f;--cyan:#60dcff;--violet:#a88bff;--text:#f4f7ff;--muted:#a9b6d4}
-*{box-sizing:border-box}body{margin:0;background:radial-gradient(ellipse at 70% 0%,#26356e 0,transparent 38%),var(--bg);font-family:system-ui,-apple-system,"Segoe UI",sans-serif;color:var(--text)}
-.wrap{max-width:1000px;margin:auto;padding:22px}.top{display:flex;align-items:center;justify-content:space-between;gap:12px}.brand{font-size:1.35rem;font-weight:850;letter-spacing:.04em}.brand span{background:linear-gradient(90deg,var(--cyan),var(--violet));color:transparent;background-clip:text}.pill{border:1px solid var(--line);border-radius:99px;padding:8px 12px;color:var(--muted);font-size:.82rem}
-.hero{padding:56px 0 32px;display:grid;grid-template-columns:1.1fr .9fr;gap:28px;align-items:center}.eyebrow{color:var(--cyan);font-weight:700;letter-spacing:.12em;font-size:.78rem}.hero h1{font-size:clamp(2.6rem,7vw,5rem);line-height:.98;margin:14px 0}.hero p{color:var(--muted);line-height:1.75;max-width:560px}.actions{display:flex;flex-wrap:wrap;gap:10px;margin-top:22px}button,.button{border:0;border-radius:13px;padding:12px 16px;font:inherit;font-weight:750;cursor:pointer;text-decoration:none;display:inline-flex;align-items:center;justify-content:center;gap:8px}.primary{background:linear-gradient(110deg,#59dfff,#a78bff);color:#071020}.secondary{background:#121d37;color:var(--text);border:1px solid var(--line)}.orbbox{min-height:300px;display:grid;place-items:center;position:relative}.orb{width:min(64vw,245px);aspect-ratio:1;border-radius:50%;background:radial-gradient(circle at 35% 28%,#e8ffff 0,#70e5ff 8%,#5d75ff 30%,#522ab5 57%,#0b1435 72%);box-shadow:0 0 45px #4b7aff88, inset -18px -18px 45px #080d20;animation:float 5s ease-in-out infinite}.orb:after{content:"K";position:absolute;inset:0;display:grid;place-items:center;font-size:5rem;font-weight:900;color:#fff;text-shadow:0 0 24px #8beeff}.orb-caption{position:absolute;bottom:4px;color:var(--muted);font-size:.85rem}@keyframes float{50%{transform:translateY(-9px)}}.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin:14px 0 30px}.card,.chatbox,.install{background:linear-gradient(145deg,#121e39dd,#0d1429);border:1px solid var(--line);border-radius:20px;padding:20px}.icon{font-size:1.6rem}.card h3{margin:12px 0 6px}.card p,.small{color:var(--muted);line-height:1.65;font-size:.92rem}.section-title{font-size:1.45rem;margin:32px 0 14px}.chatbox{padding:0;overflow:hidden}.chathead{padding:16px 18px;border-bottom:1px solid var(--line);display:flex;align-items:center;justify-content:space-between}.messages{height:270px;overflow:auto;padding:16px;display:flex;flex-direction:column;gap:10px}.msg{padding:10px 13px;border-radius:14px;max-width:88%;line-height:1.5;font-size:.93rem;white-space:pre-wrap}.bot{align-self:flex-start;background:#172647}.user{align-self:flex-end;background:#344277}.composer{display:flex;gap:8px;padding:12px;border-top:1px solid var(--line)}input{min-width:0;flex:1;background:#080f21;border:1px solid var(--line);border-radius:12px;padding:12px;color:white;font:inherit}.install ol{color:var(--muted);line-height:1.9;padding-left:22px}.notice{border-left:3px solid var(--cyan);padding:10px 13px;background:#101b33;color:var(--muted);font-size:.9rem;line-height:1.65}.foot{padding:24px 0 12px;color:#7888ad;font-size:.8rem;text-align:center}
-@media(max-width:700px){.wrap{padding:16px}.hero{grid-template-columns:1fr;padding-top:38px}.orbbox{min-height:220px;grid-row:1}.orb{width:170px}.orb:after{font-size:4rem}.grid{grid-template-columns:1fr}.hero h1{font-size:3.3rem}.pill{font-size:.72rem}}
-</style>
-</head>
-<body>
-<div class="wrap">
-<header class="top"><div class="brand">✦ KOMI <span>AI 1</span></div><div class="pill">PREVIEW • รุ่นต้นแบบ</div></header>
-<main>
-<section class="hero">
- <div><div class="eyebrow">YOUR PERSONAL AI EXPERIENCE</div><h1>พบกับ<br><span style="background:linear-gradient(90deg,#60dcff,#b49aff);color:transparent;background-clip:text">KOMI AI 1</span></h1>
- <p>ผู้ช่วย AI ในสไตล์ KOMI — เริ่มจากเว็บแอปที่ติดตั้งไว้บนหน้าจอมือถือได้ พร้อมแชตและทดลองสั่งงานด้วยเสียง</p>
- <div class="actions"><button class="primary" id="installBtn">＋ ติดตั้งเว็บแอป</button><a class="button secondary" href="#assistant">ทดลอง KOMI AI ↓</a></div>
- <p class="small">เวอร์ชันต้นแบบเว็บ ไม่ใช่ระบบปฏิบัติการหรือไฟล์ APK</p></div>
- <div class="orbbox"><div class="orb"></div><div class="orb-caption">KOMI • Smarter Together</div></div>
-</section>
-<h2 class="section-title">ระบบของ KOMI</h2>
-<section class="grid">
- <article class="card"><div class="icon">✧</div><h3>KOMI Assistant</h3><p>ทดลองถามคำถามและคุยกับผู้ช่วย AI ผ่านหน้าเว็บ</p></article>
- <article class="card"><div class="icon">◉</div><h3>Voice Input</h3><p>ใช้งานไมโครโฟนของเบราว์เซอร์ที่รองรับ โดยต้องอนุญาตก่อน</p></article>
- <article class="card"><div class="icon">▦</div><h3>KOMI Home</h3><p>เพิ่มเว็บแอปลงหน้าจอหลักเพื่อเปิดใช้งานได้สะดวก</p></article>
-</section>
-<h2 class="section-title" id="assistant">ทดลอง KOMI AI</h2>
-<section class="chatbox">
- <div class="chathead"><strong>◉ KOMI Assistant</strong><span class="pill">โหมดเดโม</span></div>
- <div class="messages" id="messages" aria-live="polite"><div class="msg bot">สวัสดีครับ ผมคือ KOMI AI 1 รุ่นทดลอง 😊\nลองพิมพ์ “ช่วยวางแผนวันนี้” หรือ “ฉันทำอะไรได้บ้าง”</div></div>
- <form class="composer" id="chatForm"><input id="prompt" autocomplete="off" placeholder="พิมพ์ข้อความถึง KOMI..." aria-label="ข้อความ"><button class="primary" type="submit">ส่ง</button><button class="secondary" type="button" id="voiceBtn" aria-label="พูด">🎙</button></form>
-</section>
-<h2 class="section-title">วิธีติดตั้งบนมือถือ</h2>
-<section class="install">
- <ol><li>นำไฟล์เว็บนี้ไปโฮสต์บนเว็บไซต์ที่รองรับ HTTPS</li><li>เปิดเว็บไซต์ผ่าน Chrome หรือเบราว์เซอร์ที่รองรับบน Android</li><li>กด “ติดตั้งเว็บแอป” หากเบราว์เซอร์แสดงตัวเลือก หรือเปิดเมนูแล้วเลือก “เพิ่มลงในหน้าจอหลัก”</li><li>เปิด KOMI AI 1 จากไอคอนบนหน้าจอมือถือ</li></ol>
- <div class="notice"><strong>ข้อจำกัด:</strong> เว็บแอปนี้ยังไม่สามารถเปลี่ยน Android/iOS ให้เป็นระบบปฏิบัติการ KOMI, เข้าถึงข้อมูลส่วนตัวโดยพลการ หรือควบคุมทั้งเครื่องได้ ปุ่มแชตในรุ่นนี้เป็นเดโมที่ตอบในเบราว์เซอร์ ยังไม่ได้เชื่อมต่อโมเดล AI ออนไลน์</div>
-</section>
-</main>
-<footer class="foot">KOMI AI 1 • Prototype • สร้างเพื่อการทดลองอย่างปลอดภัย</footer>
-</div>
-<script>
-let installPrompt=null;
-const installBtn=document.getElementById('installBtn');
-window.addEventListener('beforeinstallprompt',e=>{e.preventDefault();installPrompt=e;});
-installBtn.addEventListener('click',async()=>{if(installPrompt){installPrompt.prompt();await installPrompt.userChoice;installPrompt=null;}else{alert('หากต้องการติดตั้ง ให้โฮสต์เว็บนี้บน HTTPS แล้วเปิดเมนูเบราว์เซอร์ เลือก “เพิ่มลงในหน้าจอหลัก” หรือ “ติดตั้งแอป”');}});
-const messages=document.getElementById('messages');
-function addMsg(text,who){const el=document.createElement('div');el.className='msg '+who;el.textContent=text;messages.appendChild(el);messages.scrollTop=messages.scrollHeight;}
-function reply(text){const t=text.toLowerCase();if(t.includes('ทำอะไรได้')||t.includes('ความสามารถ'))return 'ในรุ่นทดลองนี้ คุณพิมพ์คุยกับ KOMI และลองป้อนข้อความด้วยเสียงได้ครับ รุ่นนี้ยังไม่ได้เชื่อมต่อ AI ออนไลน์หรือควบคุมระบบมือถือ';if(t.includes('แผน')||t.includes('วันนี้'))return 'ลองแบ่งวันเป็น 3 ขั้นครับ:\\n1. เลือกงานสำคัญที่สุด\\n2. ทำงานนั้นเป็นช่วงสั้น ๆ\\n3. ทบทวนสิ่งที่เสร็จแล้วและวางแผนต่อ\\nบอกผมได้ว่าคุณอยากวางแผนเรื่องอะไร';if(t.includes('สวัสดี'))return 'สวัสดีครับ 👋 ยินดีต้อนรับสู่ KOMI AI 1 รุ่นทดลอง';return 'ได้รับข้อความแล้วครับ: “'+text+'”\\nนี่คือโหมดเดโมที่ยังไม่ได้เชื่อมต่อโมเดล AI จริง เมื่อต้องการใช้งานจริง ต้องเชื่อมต่อบริการ AI ผ่านเซิร์ฟเวอร์อย่างปลอดภัย';}
-document.getElementById('chatForm').addEventListener('submit',e=>{e.preventDefault();const input=document.getElementById('prompt');const text=input.value.trim();if(!text)return;addMsg(text,'user');input.value='';setTimeout(()=>addMsg(reply(text),'bot'),250);});
-document.getElementById('voiceBtn').addEventListener('click',()=>{const SR=window.SpeechRecognition||window.webkitSpeechRecognition;if(!SR){alert('เบราว์เซอร์นี้ยังไม่รองรับการรู้จำเสียง ลองใช้ Chrome เวอร์ชันใหม่');return;}const rec=new SR();rec.lang='th-TH';rec.onresult=e=>{document.getElementById('prompt').value=e.results[0][0].transcript;};rec.onerror=()=>alert('ไม่สามารถรับเสียงได้ กรุณาตรวจสอบสิทธิ์ไมโครโฟน');rec.start();});
-if('serviceWorker' in navigator && location.protocol.startsWith('http'))navigator.serviceWorker.register('./sw.js').catch(()=>{});
-</script>
-</body>
-</html>
+*{box-sizing:border-box}body{margin:0;background:radial-gradient(ellipse at 70% 0,#263b7b,transparent 45%),#070b18;color:#f5f7ff;font-family:system-ui,sans-serif}.wrap{max-width:900px;margin:auto;padding:22px}.brand{font-weight:900;font-size:1.4rem;letter-spacing:.05em}.brand b{color:#69ddff}.hero{display:grid;grid-template-columns:1fr 1fr;align-items:center;gap:20px;padding:42px 0}.hero h1{font-size:clamp(2.8rem,8vw,5rem);line-height:.95;margin:14px 0}.muted{color:#aab7d7;line-height:1.7}.phone{margin:auto;width:220px;height:430px;border:4px solid #536184;border-radius:38px;padding:10px;background:#02050d;box-shadow:0 0 45px #517bff55;position:relative}.screen{height:100%;border-radius:27px;padding:22px 12px;background:radial-gradient(circle at 50% 35%,#4c5bca,#101b4a 42%,#060a19 78%);display:flex;flex-direction:column;align-items:center}.notch{height:15px;width:82px;background:#02040a;border-radius:0 0 14px 14px;position:absolute;top:10px;left:calc(50% - 41px)}.time{margin-top:26px;font-size:2.2rem}.logo{margin-top:45px;width:90px;height:90px;border-radius:28px;background:linear-gradient(140deg,#50e6ff,#7267ff 60%,#b48cff);display:grid;place-items:center;font-size:3rem;font-weight:900;box-shadow:0 0 35px #6a87ff88}.name{margin-top:12px;font-weight:800;letter-spacing:.15em}.dock{margin-top:auto;display:flex;gap:10px}.dock span{width:34px;height:34px;border-radius:10px;background:#6f8dff;display:grid;place-items:center}.features{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}.card{padding:18px;border:1px solid #293b66;border-radius:18px;background:#101a32}.card h3{margin:8px 0}.btn{border:0;border-radius:12px;padding:12px 16px;background:linear-gradient(100deg,#5de4ff,#9e87ff);font-weight:800;color:#081024}.chat{margin-top:28px;border:1px solid #293b66;border-radius:18px;padding:16px}.chatrow{display:flex;gap:8px;margin-top:12px}.chat input{flex:1;min-width:0;background:#080f21;border:1px solid #293b66;border-radius:10px;padding:12px;color:white}.reply{color:#c8d7ff;white-space:pre-wrap;margin-top:12px}@media(max-width:650px){.hero{grid-template-columns:1fr}.phone{width:190px;height:375px}.features{grid-template-columns:1fr}.wrap{padding:16px}}
+</style></head><body><main class="wrap"><div class="brand">✦ KOMI <b>AI 1</b></div><section class="hero"><div><div style="color:#69ddff;font-weight:800;letter-spacing:.15em">DEVICE CONCEPT</div><h1>มือถือของคุณ<br><span style="color:#77dcff">ในแบบ KOMI</span></h1><p class="muted">ต้นแบบประสบการณ์ใช้งานสำหรับมือถือ KOMI รุ่นใหม่ พร้อมแนวคิดหน้าจอหลัก ผู้ช่วย AI และการออกแบบเฉพาะแบรนด์</p><button class="btn" onclick="document.querySelector('#assistant').scrollIntoView({behavior:'smooth'})">ทดลองผู้ช่วย AI ↓</button><p class="muted" style="font-size:.82rem">ภาพจำลอง UI เท่านั้น ยังไม่ใช่ระบบปฏิบัติการหรือ firmware</p></div><div class="phone"><div class="notch"></div><div class="screen"><div class="time">09:41</div><div class="muted" style="font-size:.72rem">KOMI • AI DEVICE</div><div class="logo">K</div><div class="name">KOMI</div><p style="font-size:.8rem">Smarter Together</p><div class="dock"><span>✦</span><span>▦</span><span>◉</span><span>⚙</span></div></div></div></section>
+<section class="features"><article class="card"><div style="font-size:1.8rem">✧</div><h3>KOMI AI Chat</h3><p class="muted">แนวคิดผู้ช่วยแชตที่รองรับหลายภาษา</p></article><article class="card"><div style="font-size:1.8rem">🎙</div><h3>Voice Assistant</h3><p class="muted">ออกแบบเพื่อการโต้ตอบด้วยเสียง พร้อมขอสิทธิ์ไมโครโฟน</p></article><article class="card"><div style="font-size:1.8rem">▦</div><h3>KOMI Home</h3><p class="muted">หน้าแรกและไอคอนแอปในเอกลักษณ์ KOMI</p></article></section>
+<section class="chat" id="assistant"><h2>ทดลอง KOMI Assistant</h2><p class="muted">เดโมนี้ใช้คำตอบตัวอย่างในเครื่อง ยังไม่ได้เชื่อมต่อ AI ออนไลน์</p><div class="chatrow"><input id="q" placeholder="พิมพ์ข้อความ..." aria-label="ข้อความ"><button class="btn" onclick="ask()">ส่ง</button></div><div class="reply" id="r" aria-live="polite"></div></section>
+<p class="muted" style="text-align:center;font-size:.8rem;margin-top:30px">KOMI AI 1 • Device concept • Prototype only</p></main><script>function ask(){let q=document.getElementById('q').value.trim();if(!q)return;document.getElementById('r').textContent='KOMI AI (เดโม): รับข้อความ “'+q+'” แล้วครับ รุ่นนี้เป็นตัวอย่างหน้าจอเท่านั้น การเชื่อมต่อ AI จริงต้องใช้ backend ที่ปลอดภัย';}</script></body></html>
